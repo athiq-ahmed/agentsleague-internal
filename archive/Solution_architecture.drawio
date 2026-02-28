@@ -1,0 +1,234 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" version="29.4.0">
+  <diagram name="Agentic Certification Prep Architecture V4 (Clean)" id="v4-clean-grouped">
+    <mxGraphModel dx="2003" dy="2179" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- TITLE -->
+        <mxCell id="title" value="Microsoft Agents League – Certification Prep Architecture (V4)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="8" width="1300" height="28" as="geometry" />
+        </mxCell>
+
+        <!-- SAFETY BAR (cross-cutting, top) -->
+        <mxCell id="safety" value="Policy &amp; Safety Guardrails (cross-cutting): PII minimization  •  harmful-content filter  •  anti-cheating rules  •  human escalation path" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDE7F3;strokeColor=#B4009E;fontSize=13;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="42" width="1840" height="44" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════ -->
+        <!-- SECTION 1: PREPARATION                          -->
+        <!-- ═══════════════════════════════════════════════ -->
+        <mxCell id="sec1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#8A6D00;" vertex="1" parent="1">
+          <mxGeometry x="40" y="96" width="1840" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="sec1_label" value="1. Intake &amp; Preparation" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="58" y="100" width="250" height="24" as="geometry" />
+        </mxCell>
+
+        <!-- Student Input -->
+        <mxCell id="s_input" value="Student Input&#xa;Topics • Exam • Time • Preferences" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEF6FF;strokeColor=#0F6CBD;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="148" width="240" height="76" as="geometry" />
+        </mxCell>
+
+        <!-- Learner Intake & Profiling -->
+        <mxCell id="intake" value="&lt;b&gt;Learner Intake &amp;amp; Profiling&lt;/b&gt;&#xa;State captured" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F0FF;strokeColor=#5C2D91;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="336" y="148" width="240" height="76" as="geometry" />
+        </mxCell>
+
+        <!-- Preparation Orchestrator yellow block -->
+        <mxCell id="orch_block" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4CE;strokeColor=#8A6D00;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="614" y="106" width="740" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="orch_label" value="Preparation Orchestrator (Central Brain)" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#ECECEC;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="664" y="110" width="640" height="28" as="geometry" />
+        </mxCell>
+
+        <!-- 1.1 Learning Path Planner (merged) -->
+        <mxCell id="a11" value="&lt;b&gt;1.1 Learning Path Planner&lt;/b&gt;&#xa;(Syllabus mapper + resource curator)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F0FF;strokeColor=#5C2D91;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="638" y="162" width="300" height="76" as="geometry" />
+        </mxCell>
+
+        <!-- 1.2 Study Plan & Engagement Generator (merged) -->
+        <mxCell id="a12" value="&lt;b&gt;1.2 Study Plan &amp;amp; Engagement Generator&lt;/b&gt;&#xa;(Study plan + reminders)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F0FF;strokeColor=#5C2D91;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="990" y="162" width="330" height="76" as="geometry" />
+        </mxCell>
+
+        <!-- Reasoning Trace Log inside orchestrator block -->
+        <mxCell id="trace" value="Reasoning Trace Log  (explainability)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#8A6D00;fontSize=12;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="724" y="276" width="500" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Preparation Output Artifact -->
+        <mxCell id="prep_out" value="Preparation Output Artifact&#xa;Study Plan + Resources + Milestones" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEF6FF;strokeColor=#0F6CBD;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="166" width="320" height="76" as="geometry" />
+        </mxCell>
+
+        <!-- Ready for Assessment? diamond -->
+        <mxCell id="ready_q" value="Ready for&#xa;Assessment?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E9F7EE;strokeColor=#107C10;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="268" width="170" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════ -->
+        <!-- SECTION 2: ASSESSMENT + VERIFICATION           -->
+        <!-- ═══════════════════════════════════════════════ -->
+        <mxCell id="sec2_label" value="2. Assessment + Verification" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="432" width="280" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="sec2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3F0FF;strokeColor=#5C2D91;" vertex="1" parent="1">
+          <mxGeometry x="490" y="458" width="1230" height="172" as="geometry"/>
+        </mxCell>
+
+        <!-- 2.1 Assessment Builder (leftmost) -->
+        <mxCell id="a21" value="&lt;b&gt;2.1 Assessment Builder&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F0FF;strokeColor=#5C2D91;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="510" y="483" width="270" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- 2.2 Tiered Verifier + Repair Loop (middle) -->
+        <mxCell id="a22" value="&lt;b&gt;2.2 Tiered Verifier + Repair Loop&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDE7F3;strokeColor=#B4009E;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="483" width="310" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- 2.3 Scoring Engine (rightmost, inside sec2) -->
+        <mxCell id="a23" value="&lt;b&gt;2.3 Scoring Engine&lt;/b&gt;&#xa;(deterministic)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F7EE;strokeColor=#107C10;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="483" width="280" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════ -->
+        <!-- SECTION 3: DECISION + ADAPTATION               -->
+        <!-- ═══════════════════════════════════════════════ -->
+        <mxCell id="sec3_label" value="3. Decision + Adaptation" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="432" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="sec3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F7EE;strokeColor=#107C10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="458" width="430" height="172" as="geometry" />
+        </mxCell>
+
+        <!-- 3.1 Gap Analyzer + Decision Policy -->
+        <mxCell id="a31" value="&lt;b&gt;3.1 Gap Analyzer &amp;amp; Decision Policy&lt;/b&gt;&#xa;Ready if overall ≥ 75 and all domains ≥ 70" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F7EE;strokeColor=#107C10;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="490" width="210" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- 3.2 Certification + Exam Planner -->
+        <mxCell id="a32" value="&lt;b&gt;3.2 Certification + Exam Planner&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEF6FF;strokeColor=#0F6CBD;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="58" y="490" width="162" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- OBSERVABILITY BAR (passive, bottom) -->
+        <mxCell id="obs" value="Evaluation Harness &amp; Observability (passive – no control arrows)  •  KPIs  •  latency  •  verifier catch-rate  •  gap delta  •  readiness accuracy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEF6FF;strokeColor=#0F6CBD;fontSize=12;fontStyle=2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="660" width="1840" height="44" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════ -->
+        <!-- ARROWS                                          -->
+        <!-- ═══════════════════════════════════════════════ -->
+
+        <!-- A1: Student Input → Learner Intake -->
+        <mxCell id="a1" edge="1" parent="1" source="s_input" target="intake" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- A2: Learner Intake → Preparation Orchestrator block -->
+        <mxCell id="a2" edge="1" parent="1" source="intake" target="orch_block" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- A3 (internal): 1.1 → 1.2 inside orchestrator -->
+        <mxCell id="a3" edge="1" parent="1" source="a11" target="a12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#5C2D91;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- A4: Preparation Orchestrator block → Preparation Output Artifact -->
+        <mxCell id="a4" edge="1" parent="1" source="orch_block" target="prep_out" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- A5: Output Artifact → Ready for Assessment? -->
+        <mxCell id="a5" edge="1" parent="1" source="prep_out" target="ready_q" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- A6: Ready? Yes → Assessment Builder 2.1 (enters top, jogs left above sec2) -->
+        <mxCell id="a6" edge="1" parent="1" source="ready_q" target="a21" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#107C10;fontStyle=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1515" y="430" />
+              <mxPoint x="645" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- A7: Ready? No → back to Preparation block (replan loop) -->
+        <mxCell id="a7" edge="1" parent="1" source="ready_q" target="sec1" value="No – Replan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;strokeColor=#8A6D00;fontStyle=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1870" y="318" />
+              <mxPoint x="1870" y="252" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- A8: Assessment Builder → Tiered Verifier (simple left-to-right) -->
+        <mxCell id="a8" edge="1" parent="1" source="a21" target="a22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- A9: Tiered Verifier → Assessment Builder (repair loop, routes below both blocks) -->
+        <mxCell id="a9" edge="1" parent="1" source="a22" target="a21" value="repair" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;strokeColor=#B4009E;fontStyle=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="995" y="600" />
+              <mxPoint x="645" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- A10: Tiered Verifier → Scoring Engine (validated only, simple left-to-right) -->
+        <mxCell id="a10" edge="1" parent="1" source="a22" target="a23" value="validated only" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#107C10;fontStyle=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- A11: Scoring Engine → Gap Analyzer (one-way) -->
+        <mxCell id="a11e" edge="1" parent="1" source="a23" target="a31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#107C10;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1210" y="528" />
+              <mxPoint x="490" y="528" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- A12: Gap Analyzer → Cert Planner (ready) -->
+        <mxCell id="a12e" edge="1" parent="1" source="a31" target="a32" value="Ready" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#107C10;fontStyle=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- A13: Gap Analyzer → back to Preparation (not ready – remediate) -->
+        <mxCell id="a13e" edge="1" parent="1" source="a31" target="sec1" value="Not Ready – Remediate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;strokeColor=#8A6D00;fontStyle=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.664;entryY=1;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="345" y="400" />
+              <mxPoint x="940" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════ -->
+        <!-- LEGEND CALLOUTS (below, same V2 style)         -->
+        <!-- ═══════════════════════════════════════════════ -->
+        <mxCell id="leg1" value="&lt;div style=&quot;font-family:'Segoe UI';line-height:20px;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;Learner Intake &amp;amp; Profiling&lt;/b&gt; converts raw student input into a structured learner profile that the Planner uses for orchestration.&lt;/font&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="724" width="1840" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2" value="&lt;div style=&quot;font-family:'Segoe UI';line-height:20px;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;1.1 Learning Path Planner&lt;/b&gt; maps the exam syllabus to structured domains and authoritative Microsoft Learn resources (merged from Syllabus Mapper + Path Curator).&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;1.2 Study Plan &amp;amp; Engagement Generator&lt;/b&gt; converts the path into a weekly schedule with milestones and sends engagement reminders (merged from Study Plan Generator + Engagement Reminders).&lt;/font&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="762" width="1840" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3" value="&lt;div style=&quot;font-family:'Segoe UI';line-height:20px;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;2.1 Assessment Builder&lt;/b&gt; generates exam-style questions tagged by objective and difficulty.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;2.2 Tiered Verifier + Repair Loop&lt;/b&gt; validates questions for correctness, coverage and safety; repairs and re-verifies before output.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;2.3 Scoring Engine&lt;/b&gt; computes domain and overall scores deterministically.&lt;/font&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="806" width="1840" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4" value="&lt;div style=&quot;font-family:'Segoe UI';line-height:20px;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;3.1 Gap Analyzer &amp;amp; Decision Policy&lt;/b&gt; converts scores into objective-level insights and applies explicit readiness thresholds (overall ≥ 75, all domains ≥ 70) to decide: ready → exam, or not ready → targeted remediation and replan.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;3.2 Certification + Exam Planner&lt;/b&gt; converts the ready signal into concrete next steps for booking and sitting the Microsoft exam.&lt;/font&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="850" width="1840" height="40" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

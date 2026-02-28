@@ -1,0 +1,177 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" version="29.4.0">
+  <diagram name="Agentic Certification Prep Architecture V3.2" id="v3-2-named-clean">
+    <mxGraphModel dx="1800" dy="1200" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="title" value="Microsoft Agents League - Certification Prep Architecture (V3.2 Named Blocks)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="10" width="1500" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="lane0" value="L0: Intake and Safety" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2F8;strokeColor=#B4009E;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="50" width="1840" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="lane1" value="L1: Preparation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4CE;strokeColor=#8A6D00;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="1840" height="190" as="geometry"/>
+        </mxCell>
+        <mxCell id="lane2" value="L2: Assessment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3F0FF;strokeColor=#5C2D91;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="430" width="1840" height="175" as="geometry"/>
+        </mxCell>
+        <mxCell id="lane3" value="L3: Decision and Adaptation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F7EE;strokeColor=#107C10;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="625" width="1840" height="190" as="geometry"/>
+        </mxCell>
+        <mxCell id="lane4" value="L4: Cross-Cutting (Passive Telemetry)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEF6FF;strokeColor=#0F6CBD;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="835" width="1840" height="150" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b1" value="B1 - Student Input\nTopics | Exam | Time | Preferences" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0F6CBD;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="80" y="98" width="260" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b2" value="B2 - Policy and Safety Guardrails\nPII | harmful-content | anti-cheating | escalation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B4009E;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="390" y="98" width="430" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b3" value="B3 - Learner Intake and Profiling\nState captured" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5C2D91;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="880" y="98" width="330" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b4" value="B4 - Preparation Orchestrator\nCentral brain" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8A6D00;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="285" width="300" height="84" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b5" value="B5 - Learning Path Planner\nMerged agent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5C2D91;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="520" y="285" width="300" height="84" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b6" value="B6 - Study Plan and Engagement Generator\nMerged agent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5C2D91;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="930" y="285" width="370" height="84" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b7" value="B7 - Preparation Artifact\nPlan + resources + milestones" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0F6CBD;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="285" width="350" height="84" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b8" value="B8 - Assessment Builder" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5C2D91;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="482" width="260" height="78" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b9" value="B9 - Tiered Verifier plus Repair Loop" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B4009E;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="482" width="340" height="78" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b10" value="B10 - Scoring Engine\nDeterministic" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#107C10;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="482" width="290" height="78" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b11" value="B11 - Decision Policy\nThresholds isolated" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#107C10;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="690" width="270" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b12" value="B12 - Ready? Gateway" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#107C10;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="682" width="170" height="95" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b13" value="B13 - Certification Planner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0F6CBD;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="690" width="280" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b14" value="B14 - Remediation Replanner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8A6D00;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="690" width="300" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b15" value="B15 - Reasoning Trace Log\nExplainability" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8A6D00;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="872" width="360" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b16" value="B16 - Evaluation Harness and Observability\nPassive only (no control flow)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0F6CBD;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="872" width="500" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e1" edge="1" parent="1" source="b1" target="b2" value="A1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="b2" target="b3" value="A2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="b3" target="b4" value="A3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e4" edge="1" parent="1" source="b4" target="b5" value="A4 fan-out" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="b4" target="b6" value="A5 fan-out" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="b5" target="b7" value="A6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="b6" target="b7" value="A7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e8" edge="1" parent="1" source="b7" target="b8" value="A8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="b8" target="b9" value="A9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="b9" target="b8" value="A10 repair" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#B4009E;dashed=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="b9" target="b10" value="A11 validated only" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e12" edge="1" parent="1" source="b10" target="b11" value="A12 one-way" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#107C10;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="b11" target="b12" value="A13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="b12" target="b13" value="A14 Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#107C10;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="b12" target="b14" value="A15 No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#8A6D00;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="b14" target="b4" value="A16 replan loop" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#8A6D00;dashed=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1610" y="595"/>
+              <mxPoint x="260" y="595"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="t1" edge="1" parent="1" source="b4" target="b15" value="T1 trace" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#8A6D00;dashed=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="t2" edge="1" parent="1" source="b9" target="b15" value="T2 trace" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#8A6D00;dashed=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="t3" edge="1" parent="1" source="b11" target="b15" value="T3 trace" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#8A6D00;dashed=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="o1" edge="1" parent="1" source="b4" target="b16" value="O1 metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#0F6CBD;dashed=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="o2" edge="1" parent="1" source="b9" target="b16" value="O2 metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#0F6CBD;dashed=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="o3" edge="1" parent="1" source="b10" target="b16" value="O3 metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#0F6CBD;dashed=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="o4" edge="1" parent="1" source="b11" target="b16" value="O4 metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#0F6CBD;dashed=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="o5" edge="1" parent="1" source="b15" target="b16" value="O5 trace export" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#0F6CBD;dashed=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,3 @@
+# This folder holds cached PDF reports for fixed demo scenarios (alex / priyanka).
+# Files are generated once and reused on every subsequent download or email request.
+# Generated files are NOT committed to git (see .gitignore).
