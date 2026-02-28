@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+Videos/
+
+# secrets – never commit (.env holds all config including commented examples)
+.env
+.env.*
+*.pem
+*.key
+
+# Azure
+.azure/
+**/.secrets/
+config/secrets.*
+
+# Local database
+cert_prep_data.db
+
+# Demo PDF cache — generated at runtime, not committed
+demo_pdfs/*.pdf
+
+# Streamlit credentials (local only)
+.streamlit/credentials.toml
