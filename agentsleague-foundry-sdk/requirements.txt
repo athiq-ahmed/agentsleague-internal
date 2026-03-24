@@ -1,0 +1,31 @@
+# ── Core UI & visualisation ────────────────────────────────────────────────
+streamlit>=1.54.0          # 7-tab UI, Admin Dashboard, session_state orchestration
+plotly>=6.0.0              # Gantt chart, domain radar, agent execution timeline
+altair>=5.0.0              # Streamlit built-in charting (transitive; pin for reproducibility)
+
+# ── LLM / AI SDKs ─────────────────────────────────────────────────────────
+openai>=2.0.0              # Azure OpenAI GPT-4o JSON-mode (Tier 2 profiler)
+azure-ai-projects>=2.0.0b3 # Azure AI Foundry Agent Service SDK (Tier 1 profiler + telemetry)
+azure-identity>=1.25.0     # DefaultAzureCredential for Foundry SDK (az login / managed identity)
+azure-storage-blob>=12.0.0 # Transitive dependency of azure-ai-projects; pin to avoid conflicts
+
+# ── Data validation & modelling ────────────────────────────────────────────
+pydantic>=2.0.0            # Typed handoff contracts at every agent boundary (BaseModel + dataclass)
+python-dotenv>=1.0.0       # .env loading for AZURE_OPENAI_*, SMTP_*, FORCE_MOCK_MODE
+
+# ── Data processing ────────────────────────────────────────────────────────
+pandas>=2.0.0              # Admin Dashboard dataframes, session history table
+numpy>=1.26.0              # Numerical operations in readiness formula and chart rendering
+
+# ── PDF generation & email ────────────────────────────────────────────────
+reportlab>=4.0.0           # PDF report generation — learner profile PDF + progress report PDF
+
+# ── Developer experience ───────────────────────────────────────────────────
+rich>=13.7.0               # Coloured terminal output for CLI intake (demo_intake.py)
+pytest>=9.0.0              # 342 automated tests; zero Azure credentials required
+pytest-mock>=3.0.0         # Mock fixtures for agent unit tests
+
+# ── Optional: LLM-as-judge evaluation (Tier 1 live mode only) ─────────────
+# azure-ai-evaluation>=1.0.0  # Coherence / Relevance / Fluency metrics via eval_harness.py
+#                               Uncomment and `pip install azure-ai-evaluation` to activate.
+#                               Not required for demo mode or standard operation.
